@@ -1,0 +1,16 @@
+{
+  "name": "parabank-qa-automation",
+  "version": "1.0.0",
+  "description": "Senior QA Automation Assignment for ParaBank",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:headless": "npx playwright test --headed=false",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.0",
+    "@types/node": "^20.19.43",
+    "typescript": "^5.0.0"
+  }
+}

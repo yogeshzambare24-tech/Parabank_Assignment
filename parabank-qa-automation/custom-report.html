@@ -1,0 +1,90 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <title>Glassmorphism QA Dashboard</title>
+      <style>
+        body {
+          background: linear-gradient(135deg, #0f172a, #1e293b);
+          color: #f8fafc;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          margin: 0;
+          padding: 40px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        h1 {
+          color: #F48031; /* Hex Accent Code Requirement */
+          border-bottom: 2px solid #F48031;
+          padding-bottom: 10px;
+          width: 80%;
+          text-align: center;
+        }
+        .dashboard {
+          background: rgba(255, 255, 255, 0.05);
+          backdrop-filter: blur(10px);
+          -webkit-backdrop-filter: blur(10px);
+          border: 1px solid rgba(255, 255, 255, 0.1);
+          border-radius: 16px;
+          padding: 30px;
+          width: 80%;
+          box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        }
+        .summary-cards {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 30px;
+        }
+        .card {
+          background: rgba(255, 255, 255, 0.03);
+          border: 1px solid rgba(255, 255, 255, 0.05);
+          border-radius: 12px;
+          padding: 20px;
+          flex: 1;
+          margin: 0 10px;
+          text-align: center;
+        }
+        .card.passed h3 { color: #F48031; } /* Passing Indicator Status Hex */
+        .card.failed h3 { color: #ef4444; }
+        .test-item {
+          background: rgba(255, 255, 255, 0.02);
+          border-left: 5px solid #F48031;
+          margin: 10px 0;
+          padding: 15px;
+          border-radius: 4px;
+        }
+        .test-item.failed { border-left-color: #ef4444; }
+        .error { color: #f87171; font-size: 0.9em; margin-top: 5px; white-space: pre-wrap; }
+      </style>
+    </head>
+    <body>
+      <h1>ParaBank Test Summary Dashboard</h1>
+      <div class="dashboard">
+        <div class="summary-cards">
+          <div class="card"><h3>Total Tests</h3><p>3</p></div>
+          <div class="card passed"><h3>Passed</h3><p>3</p></div>
+          <div class="card failed"><h3>Failed</h3><p>0</p></div>
+        </div>
+        <h2>Test Details</h2>
+        
+          <div class="test-item ">
+            <strong>registers a user, opens an account, and verifies an approved loan balance</strong> - <span style="color: #F48031">PASSED</span> (11.64s)
+            
+          </div>
+        
+          <div class="test-item ">
+            <strong>Process multiple automated value transactions and assert mathematical accuracy</strong> - <span style="color: #F48031">PASSED</span> (10.16s)
+            
+          </div>
+        
+          <div class="test-item ">
+            <strong>Execute purely headless API sequence and validate response schemas</strong> - <span style="color: #F48031">PASSED</span> (3.09s)
+            
+          </div>
+        
+      </div>
+    </body>
+    </html>
+    
